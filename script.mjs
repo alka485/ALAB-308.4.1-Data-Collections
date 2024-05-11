@@ -59,7 +59,7 @@ console.log(row1Header);
 
 //Declare a variable that stores the number of columns in each row of data within the CSV.
 
-let colcount = row1Header.length;
+let colcount = row1Header.length; //first row has 4 entries
 
 console.log(colcount);
 
@@ -70,18 +70,19 @@ let col = " ";
 
 
 
-for(let i = 0 ; i < str1.length; i++) {
+for(let i = 0 ; i < row1.length; i++) {
 
-    let char = str1[i];
+    let char = row1[i].split(",");
+    console.log(char);
     
 
-    // if (char === ',')
-    //     console.log("print");
+    if (char === ',')
+        console.log("print");
 
-    // else {
-    //     console.log("np");
+    else {
+        console.log("np");
         
-    // }
+    }
 
 }
 
