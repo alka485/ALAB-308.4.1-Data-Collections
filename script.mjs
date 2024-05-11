@@ -57,9 +57,12 @@ console.log(row1);
 let row1Header = row1[0].split(",");
 console.log(row1Header);
 
+let count = row1Header.length;
 
-// let heading = newArr[0].split(",");
-// console.log(heading);
+console.log(count);
+
+
+
 
 let col = " ";
 
