@@ -48,7 +48,7 @@ for (let i =0 ; i < str.length; i++){
 
 //Part 2
 
-const str1 = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26,`;
+const str1 = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26,`
 
 let row1 = str1.split("\n");
 
@@ -63,20 +63,17 @@ let colcount = row1Header.length; //first row has 4 entries
 
 console.log(colcount);
 
-
-
-
 let col = " ";
 
 
 
 for(let i = 0 ; i < row1.length; i++) {
 
-    let char = row1[i].split(",");
-    console.log(char);
+    let numRows = row1[i].split(",");
+    console.log(numRows);
     
 
-    if (char === ',')
+    if (numRows === ',')
         console.log("print");
 
     else {
