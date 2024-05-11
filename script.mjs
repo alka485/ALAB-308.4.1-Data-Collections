@@ -57,9 +57,11 @@ console.log(row1);
 let row1Header = row1[0].split(",");
 console.log(row1Header);
 
-let count = row1Header.length;
+//Declare a variable that stores the number of columns in each row of data within the CSV.
 
-console.log(count);
+let colcount = row1Header.length;
+
+console.log(colcount);
 
 
 
