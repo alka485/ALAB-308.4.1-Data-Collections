@@ -28,10 +28,10 @@ for (let i =0 ; i < str.length; i++){
     if(char === " ,"){
         row.push(cell);
         cell = " ";
-        console.log(row);
+        //console.log(row);
     } else if (char === '\n'){
         row.push(cell);
-        console.log(row.join(','));
+       // console.log(row.join(','));
         row = [ ];
         cell = " ";
  
@@ -40,7 +40,33 @@ for (let i =0 ; i < str.length; i++){
     }
 
     if (row.length > 0) {
-        console.log(row.join(', '));
+       // console.log(row.join(', '));
+    }
+
+}
+
+
+//Part 2
+
+const str1 = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26,`;
+
+//let newArr = str1.split(" ");
+
+//console.log(newArr);
+
+let col = " ";
+
+for(let i = 0 ; i < str1.length; i++) {
+
+    let char = str1[i];
+    
+
+    if (char === ',')
+        console.log(str1[i]);
+
+    else {
+        console.log(str1[i]);
+        
     }
 
 }
