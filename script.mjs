@@ -50,9 +50,16 @@ for (let i =0 ; i < str.length; i++){
 
 const str1 = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26,`;
 
-let newArr = str1.split("\n");
+let row1 = str1.split("\n");
 
-console.log(newArr);
+console.log(row1);
+
+let row1Header = row1[0].split(",");
+console.log(row1Header);
+
+
+// let heading = newArr[0].split(",");
+// console.log(heading);
 
 let col = " ";
 
@@ -63,13 +70,13 @@ for(let i = 0 ; i < str1.length; i++) {
     let char = str1[i];
     
 
-    if (char === ',')
-        console.log(str1[i]);
+    // if (char === ',')
+    //     console.log("print");
 
-    else {
-        console.log(str1[i]);
+    // else {
+    //     console.log("np");
         
-    }
+    // }
 
 }
 
