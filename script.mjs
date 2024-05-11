@@ -50,11 +50,13 @@ for (let i =0 ; i < str.length; i++){
 
 const str1 = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26,`;
 
-//let newArr = str1.split(" ");
+let newArr = str1.split("\n");
 
-//console.log(newArr);
+console.log(newArr);
 
 let col = " ";
+
+
 
 for(let i = 0 ; i < str1.length; i++) {
 
