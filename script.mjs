@@ -45,6 +45,7 @@ for (let i =0 ; i < str.length; i++){
 
 }
 
+//--------///
 
 //Part 2
 
@@ -62,8 +63,6 @@ let row1Header = row1[0].split(",");
 let colcount = row1Header.length; //first row has 4 entries
 
 //console.log(colcount);
-
-let col = " ";
 
 const finalData = [];
 
@@ -87,6 +86,23 @@ for(let i = 1 ; i < row1.length; i++) {
 finalData.unshift(row1Header);
 
 console.log(finalData);
+
+//-------------------------//
+
+//Part -3 
+
+const str2 = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26,`
+
+//Split it into row
+let row2 = str2.split("\n");
+
+//heading
+const row2Header = row2.split("/n");
+
+//no of columns
+
+const colcount2 = row2Header.length;
+
 
 
 
