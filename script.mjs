@@ -85,7 +85,7 @@ for(let i = 1 ; i < row1.length; i++) {
 
 finalData.unshift(row1Header);
 
-console.log(finalData);
+//console.log(finalData);
 
 //-------------------------//
 
@@ -95,13 +95,37 @@ const str2 = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63
 
 //Split it into row
 let row2 = str2.split("\n");
+console.log(row2);
 
 //heading
-const row2Header = row2.split("/n");
+const row2Header = row2[0].split(",");
+console.log(row2Header);
 
 //no of columns
 
 const colcount2 = row2Header.length;
+console.log(colcount2);
+
+const finalData1 = [];
+
+for (let i = 1 ; i < row2.length ; i++){
+    const numRows1 = row2[i].split(',');
+   // console.log(numRows1);
+    //create new object
+    const rowDesc = {};
+    for(let j = 0; j < colcount2; j++ ){
+        const heading  = row2Header[j].toLowerCase();
+        //console.log(heading);
+        rowDesc[heading] = numRows1[j];
+        //console.log(rowDesc);
+    }
+
+     //console.log(rowDesc);
+
+    finalData1.push(rowDesc);
+
+}
+  console.log(finalData1);
 
 
 
