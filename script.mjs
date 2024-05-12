@@ -52,36 +52,43 @@ const str1 = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63
 
 let row1 = str1.split("\n");
 
-console.log(row1);
+//console.log(row1);
 
 let row1Header = row1[0].split(",");
-console.log(row1Header);
+//console.log(row1Header);
 
 //Declare a variable that stores the number of columns in each row of data within the CSV.
 
 let colcount = row1Header.length; //first row has 4 entries
 
-console.log(colcount);
+//console.log(colcount);
 
 let col = " ";
 
+const finalData = [];
 
-
-for(let i = 0 ; i < row1.length; i++) {
+for(let i = 1 ; i < row1.length; i++) {
 
     let numRows = row1[i].split(",");
-    console.log(numRows);
+    //console.log(numRows);
     
+    let rowDesc =  [];
 
-    if (numRows === ',')
-        console.log("print");
-
-    else {
-        console.log("np");
-        
+    for (let j = 0 ; j < colcount; j++) {
+        rowDesc.push(numRows[j]);
     }
 
+   //console.log(rowDesc);
+
+   finalData.push(rowDesc);
+
 }
+
+finalData.unshift(row1Header);
+
+console.log(finalData);
+
+
 
 
 
