@@ -95,16 +95,16 @@ const str2 = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63
 
 //Split it into row
 let row2 = str2.split("\n");
-console.log(row2);
+//console.log(row2);
 
 //heading
 const row2Header = row2[0].split(",");
-console.log(row2Header);
+//console.log(row2Header);
 
 //no of columns
 
 const colcount2 = row2Header.length;
-console.log(colcount2);
+//console.log(colcount2);
 
 const finalData1 = [];
 
@@ -125,8 +125,30 @@ for (let i = 1 ; i < row2.length ; i++){
     finalData1.push(rowDesc);
 
 }
-  console.log(finalData1);
+ // console.log(finalData1);
 
+ // Part 4 : Sorting and manipulating Data
+
+ // Remove the last element from sorted array
+
+ finalData1.pop();
+ console.log(finalData1);
+
+ // Insert the following object at index 1:
+
+ const newObj = {id : "48" , name: "Barry" , occupation: "Runner" , age: "25"}
+
+ finalData1.splice(1, 0, newObj);
+
+ console.log(finalData1);
+
+ //Add the following object to the end of the array:
+
+ const newObj1 = {id: "7", name: "Bilbo", occupation: "None", age: "111"}
+ finalData1.push(newObj1);
+ console.log(finalData1);
+ 
+ 
 
 
 
