@@ -152,14 +152,17 @@ for (let i = 1 ; i < row2.length ; i++){
  let totalAge = 0 ;
 
  for(let i = 0; i < finalData1.length; i++) {
-    const age = finalData1[i].age
+    const age = parseInt(finalData1[i].age);
     //console.log(age);
 
     totalAge += age;
     // console.log(totalAge);
  }
 
- console.log(totalAge);
+ //average age
+
+ const avgAge = totalAge/ finalData1.length;
+ console.log(avgAge);
 
 
 
