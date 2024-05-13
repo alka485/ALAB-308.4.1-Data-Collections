@@ -132,7 +132,7 @@ for (let i = 1 ; i < row2.length ; i++){
  // Remove the last element from sorted array
 
  finalData1.pop();
- console.log(finalData1);
+ //console.log(finalData1);
 
  // Insert the following object at index 1:
 
@@ -140,13 +140,29 @@ for (let i = 1 ; i < row2.length ; i++){
 
  finalData1.splice(1, 0, newObj);
 
- console.log(finalData1);
+ //console.log(finalData1);
 
  //Add the following object to the end of the array:
 
  const newObj1 = {id: "7", name: "Bilbo", occupation: "None", age: "111"}
  finalData1.push(newObj1);
- console.log(finalData1);
+ //console.log(finalData1);
+
+ // calculate average age of the group
+ let totalAge = 0 ;
+
+ for(let i = 0; i < finalData1.length; i++) {
+    const age = finalData1[i].age
+    //console.log(age);
+
+    totalAge += age;
+    // console.log(totalAge);
+ }
+
+ console.log(totalAge);
+
+
+
  
  
 
