@@ -162,7 +162,23 @@ for (let i = 1 ; i < row2.length ; i++){
  //average age
 
  const avgAge = totalAge/ finalData1.length;
- console.log(avgAge);
+ //console.log(avgAge);
+
+ //----------------------------------------------//
+
+ //Part 5 
+
+ let orginalData = " ";
+ console.log(finalData);
+
+ for(let i = 0 ; i < finalData.length; i++) {
+    const values = Object.values(finalData[i]);
+    console.log(values);
+
+    orginalData += values.join(',') + '\n' ;
+ }
+
+console.log(orginalData);
 
 
 
