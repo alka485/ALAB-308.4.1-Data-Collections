@@ -76,16 +76,10 @@ for(let i = 1 ; i < row1.length; i++) {
     for (let j = 0 ; j < colcount; j++) {
         rowDesc.push(numRows[j]);
     }
-
-   //console.log(rowDesc);
-
    finalData.push(rowDesc);
-
 }
 
 finalData.unshift(row1Header);
-
-//console.log(finalData);
 
 //-------------------------//
 
@@ -93,20 +87,14 @@ finalData.unshift(row1Header);
 
 const str2 = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26,`
 
-//Split it into row
-let row2 = str2.split("\n");
+let row2 = str2.split("\n");   //Split it into row
 //console.log(row2);
-
 const row2Header = row2[0].split(",");  //heading
 //console.log(row2Header);
-
-//no of columns
-
-const colcount2 = row2Header.length;
+const colcount2 = row2Header.length; //no of columns
 //console.log(colcount2);
 
 const finalData1 = [];
-
 for (let i = 1 ; i < row2.length ; i++){
     const numRows1 = row2[i].split(',');
     //create new object
@@ -117,8 +105,7 @@ for (let i = 1 ; i < row2.length ; i++){
     }
     finalData1.push(rowDesc);
 }
- 
-  
+   
 //------------------------------------------------//
  // Part 4 : Sorting and manipulating Data
 
@@ -147,9 +134,8 @@ for (let i = 1 ; i < row2.length ; i++){
     totalAge += age;
  }
 
- //average age
+ const avgAge = totalAge/ finalData1.length; //average age
 
- const avgAge = totalAge/ finalData1.length;
  console.log("Average age :",avgAge);
 
  //----------------------------------------------//
